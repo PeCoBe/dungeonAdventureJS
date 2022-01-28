@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title>Prueba Player</title>
+	<!------External Javascript Function------>
+	<script src="../js/gameclass.js" type="text/javascript"></script>
+	<script src="../js/demo1.js" type="text/javascript"></script>
+
+</head>
+<body>
+<p>
+<h2>P&aacute;gina web para probar el c&oacute;digo gamemaster.js</h2>
+</p>
+<p>
+Para probar, usar la consola del navegador.
+</p>
+<p>
+Superclases con las que se cuenta: <br>
+	<ul>
+		<li>Ser</li>
+	</ul>
+</p>
+<p>
+Subclases con las que se cuenta:<br>
+	<ul>
+		<li>Player</li>
+	</ul>
+</p>
+<p>
+Propiedades y m&eacute;todos para clase Player<br>
+	<dl>
+		<dt>name</dt>
+			<dd>Define el nombre del jugador. Heredado de Ser.</dd>
+		<dt>category</dt>
+			<dd>Define la categoria del jugador. Heredado de Ser.</dd>
+		<dt>level</dt>
+			<dd>Indica en nivel del jugador. Empieza en 1. Cada 50 sube 1 nivel. Heredado de Ser.</dd>
+		<dt>health</dt>
+			<dd>Cuanta vida posee el jugador. Cuando llega a 0 muere. Heredado de Ser.</dd>
+		<dt>strength</dt>
+			<dd>Fuerza del jugador. Heredado de Ser.</dd>
+		<dt>speed</dt>
+			<dd>Velocidad del jugador. Heredado de Ser.</dd>
+		<dt>crithit</dt>
+			<dd>Probabilidad de dar un golpe critico. Heredado de Ser.</dd>
+		<dt>alive</dt>
+			<dd>Indica si el jugador esta vivo o muerto. Heredado de Ser.</dd>
+		<dt>experience</dt>
+			<dd>Cuantos puntos de experiencia posee el jugador.</dd>
+		<dt>position</dt>
+			<dd>Indica en que habitaci&oacute;n se encuentra el jugador.</dd>
+		<dt>hunger</dt>
+			<dd>Cuanta hambre tiene el jugador. Cuando llega a 0 muere.</dd>
+		<dt>thirst</dt>
+			<dd>Cuanta ser tiene el jugador. Cuando llega a 0 muere.</dd>
+		<dt>hasWeapon</dt>
+			<dd>Indica si el jugador tiene un arma en mano.</dd>
+		<dt>weapon</dt>
+			<dd>El arma que esta cargando el jugador.</dd>
+		<dt>hasArmor</dt>
+			<dd>Indica si el jugador tiene una armadura puesta.</dd>
+		<dt>armor</dt>
+			<dd>La armadura que esta usando el jugador.</dd>
+		<dt>items</dt>
+			<dd>Lista de los items que esta cargando el jugador.</dd>
+		<dt>getDamage(damage)</dt>
+			<dd>Hacer que el jugador reciva da&ntilde;o del valor <em>damage</em>. Heredado de Ser.</dd>
+		<dt>die()</dt>
+			<dd>Provocar la muerte del jugador. Heredado de Ser.</dd>
+		<dt>check(room)</dt>
+			<dd>Checa en la habitaci&oacute;n en la que se encuentra en busca de items. No implementado.</dd>
+		<dt>addItem(item)</dt>
+			<dd>A&ntilde;ade el item <em>item</em> al inventario del jugador.</dd>
+		<dt>inventory()</dt>
+			<dd>Muestra el inventario del jugador.</dd>
+		<dt>move(direction)</dt>
+			<dd>Mueve al jugador en la direcci&oacute;n <em>direction</em> indicada. No implementado.</dd>
+		<dt>eat(foodValue)</dt>
+			<dd>El jugador regenera hambre, segun el valor indicado <em>foodValue</em>.</dd>
+		<dt>drink(drinkValue)</dt>
+			<dd>El jugador regenera sed, segun el valor indicado <em>drinkValue</em>.</dd>
+		<dt>wasteEnergy(hungerValue, thirstValue)</dt>
+			<dd>El jugador gasta energias, ya sea hambre <em>hungerValue</em> o sed <em>thirstValue</em>.</dd>
+		<dt>gainExperience(experience)</dt>
+			<dd>El jugador gana la experiencia indicada por <em>experience</em>.</dd>
+		<dt>gainLevel()</dt>
+			<dd>El jugador gana un nivel por cada 50 de experiencia.</dd>
+	</dl>
+</p>
+	
+				
+</body>
+</html>

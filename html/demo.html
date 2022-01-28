@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Calabozo Demo</title>
+	<!------External Javascript Function------>
+	<script src="../js/gameclass.js" type="text/javascript"></script>
+	<script src="../js/demo1.js" type="text/javascript"></script>
+    
+    <!------jQuery Library------>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <!------jQuery UI------>    
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	
+</head>
+<body>
+
+<h2>Bienvenido aventurero, al Calabozo Demo </h2>
+
+<div id="info">
+<h4> Info </h4>
+<p>Activa la consola del navegador. Click derecho "Inspeccionar elemento" y en la pesta&ntilde;a "Consola".<br>
+Usar los botones para las diferentes acciones del personaje.</p>
+</div>
+<br>
+<br>
+<div id="controles">
+Controles:<br>
+<form name="controles">
+<br>
+<fieldset><legend>Movimiento</legend>
+	<button type="button" onclick="jugador.move(Direction.NORTH)">Norte</button>
+	<button type="button" onclick="jugador.move(Direction.SOUTH)">Sur</button>
+	<button type="button" onclick="jugador.move(Direction.EAST)">Este</button>
+	<button type="button" onclick="jugador.move(Direction.WEST)">Oeste</button>
+</fieldset>
+<br>
+<fieldset><legend>Acciones</legend>
+	<button type="button" onclick="jugador.check()">Checar</button>
+	<button type="button" onclick="jugador.attack()">Atacar</button>
+</fieldset>
+<br>
+<fieldset><legend>Informaci&oacute;n Jugador</legend>
+	<button type="button" onclick="jugador.changeName()">Cambiar Nombre</button>
+	<button type="button" onclick="jugador.info()">Mostrar informaci&oacute;n</button>
+	<button type="button" onclick="jugador.stats()">Mostrar stats</button>
+	<button type="button" onclick="jugador.inventory()">Mostrar items</button>
+</fieldset>
+<br>
+<fieldset><legend>Informaci&oacute;n Mapa</legend>
+	<button type="button" onclick="console.log(mapaDemo.name);">Nombre mapa</button>
+	<button type="button" onclick="console.log(jugador.position.name);">Nombre sala</button>
+	<button type="button" onclick="console.log(jugador.position.description)">Descripci&oacute;n</button>
+	<button type="button" onclick="console.log((jugador.position.enemy ? jugador.position.enemy.alive ? 'Enemigo en sala' : 'Enemigo Muerto' : 'No hay enemigo'));">Revisar sala enemigos</button>
+</fieldset>
+
+</form>
+</div>
+
+<div id="output">
+
+</div>
+	
+				
+</body>
+</html>
